@@ -1,5 +1,3 @@
-# @Time : 2023/10/4 12:33
-# @Author: LZY
 # @File: qcwy_class.py
 # @Software: PyCharm
 
@@ -24,7 +22,7 @@ class DRenSpider:  # 不要写小括号，不然就是方法
         self.loginweb = r'https://login.51job.com/login.php?lang=c&url=https%3A%2F%2Fwe.51job.com%2Fpc%2Fsearch'  # 设置登录的网站
         self.baseweb = r'https://we.51job.com/pc/search?jobArea=080200&keyword=%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%B8%88&searchType=2&sortType=0&metro='  # 设置最初的爬取网址
         self.web = create_chrome_driver(headless=False)  # 设置爬取的对象
-        f = open(r'D:\Skills\python\reptile\Dynamic_web_crawling\selenium\ Project_1_Recruitment\job\hangzhou\data\qcwy_杭州.csv', mode='a', encoding='utf-8', newline='')  # mode='a',表示接着写，不覆盖。，mode=‘w’,则表示从第一行开始写
+        f = open(r'./qcwy_杭州.csv', mode='a', encoding='utf-8', newline='')  # mode='a',表示接着写，不覆盖。，mode=‘w’,则表示从第一行开始写
         self.csvwirter = csv.writer(f)  # 设置csv写字对象
 
     # 设置浏览器

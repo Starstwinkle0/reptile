@@ -4,5 +4,6 @@
 pycharm：2021.3
 
 运行顺序：
-1.首先运行get_josn.py文件得到cooike信息
+1.首先运行get_josn.py文件得到cooike信息存储在qcwy.josn中
 2.再运行qcwy_class.py文件得到数据信息
+
